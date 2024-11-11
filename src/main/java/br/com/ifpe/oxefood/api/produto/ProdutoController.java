@@ -19,13 +19,13 @@ import br.com.ifpe.oxefood.modelo.produto.ProdutoService;
 
 
 public class ProdutoController {
-   @Autowired
-   private ProdutoService produtoService;
+    @Autowired
+    private ProdutoService produtoService;
 
-   @PostMapping
-   public ResponseEntity<Produto> save(@RequestBody ProdutoRequest request) {
+    @PostMapping
+    public ResponseEntity<Produto> save(@RequestBody ProdutoRequest request) {
 
-       Produto produto = produtoService.save(request.build());
-       return new ResponseEntity<Produto>(produto, HttpStatus.CREATED);
-   }
+        Produto produto = produtoService.save(request.build());
+        return new ResponseEntity<Produto>(produto, HttpStatus.CREATED);
+    }
 }
