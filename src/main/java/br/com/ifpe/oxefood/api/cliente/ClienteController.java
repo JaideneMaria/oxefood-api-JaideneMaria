@@ -21,7 +21,7 @@ import br.com.ifpe.oxefood.modelo.cliente.ClienteService;
 
 
 public class ClienteController {
-    @Autowired
+   @Autowired
    private ClienteService clienteService;
 
    @PostMapping

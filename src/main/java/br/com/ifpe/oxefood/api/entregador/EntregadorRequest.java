@@ -10,7 +10,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data // Ele é a junção do get e o set
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
