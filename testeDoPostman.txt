@@ -1,0 +1,43 @@
+CLIENTE
+
+{
+    "nome": "Jaidene Silva",
+    "dataNascimento": "24/07/1992",
+    "cpf": "12345678942",
+    "foneCelular": "81988088808",
+    "foneFixo": "8134773464"
+} 
+
+
+PRODUTO
+
+{
+    "codigo": "1",
+    "titulo": "Redmi Note 13",
+    "descricao": "Smartphone 256GB 8 RAM",
+    "valorUnitario": "1200",
+    "tempoEntregaMinimo": "2",
+    "tempoEntregaMaximo": "15"
+}
+
+ENTREGADOR
+
+{
+    "nome": "Fernando Silva",
+    "cpf": "98765432174",
+    "rg": "98478123",
+    "dataNascimento": "12/07/1977",
+    "foneCelular": "81977445896",
+    "foneFixo": "71971124587",
+    "qtdEntregasRealizadas": "10",
+    "valorFrete": "30.50",
+    "enderecoRua": "Rua da Esperança",
+    "enderecoComplemento": "casa",
+    "enderecoNumero": "14",
+    "enderecoBairro": "Vila Nova",
+    "enderecoCidade": "Recife",
+    "enderecoCep": "54280111",
+    "enderecoUf": "PE",
+    "ativo": "true"
+    
+}
