@@ -21,7 +21,7 @@ public class ClienteService {
     }
 
     public List<Cliente> listarTodos() {
-  
+
         return repository.findAll();
     }
 
@@ -30,5 +30,26 @@ public class ClienteService {
         return repository.findById(id).get();
     }
 
+    @Transactional
+    public void update(Long id, Cliente clienteAlterado) {
+
+        Cliente cliente = repository.findById(id).get();
+        cliente.setNome(clienteAlterado.getNome());
+        cliente.setDataNascimento(clienteAlterado.getDataNascimento());
+        cliente.setCpf(clienteAlterado.getCpf());
+        cliente.setFoneCelular(clienteAlterado.getFoneCelular());
+        cliente.setFoneFixo(clienteAlterado.getFoneFixo());
+
+        repository.save(cliente);
+    }
+
+    @Transactional
+    public void delete(Long id) {
+
+        Cliente cliente = repository.findById(id).get();
+        cliente.setHabilitado(Boolean.FALSE);
+
+        repository.save(cliente);
+    }
 
 }
