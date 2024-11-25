@@ -29,6 +29,7 @@ ENTREGADOR
     "dataNascimento": "12/07/1977",
     "foneCelular": "81977445896",
     "foneFixo": "71971124587",
+    
     "qtdEntregasRealizadas": "10",
     "valorFrete": "30.50",
     "enderecoRua": "Rua da Esperança",
