@@ -1,0 +1,9 @@
+Começar pela pasta model
+Criar uma pasta com o nome da entidade escolhida pelo prof
+-Criar 3 arquivos(
+    Entidade.java, 
+    EntidadeRepository.java
+    EntidadeService.java)
+
+    Na EntidadeRepository se atentar de trocar o nome public class por public interface;
+    

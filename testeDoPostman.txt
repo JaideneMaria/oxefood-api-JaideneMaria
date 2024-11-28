@@ -29,7 +29,6 @@ ENTREGADOR
     "dataNascimento": "12/07/1977",
     "foneCelular": "81977445896",
     "foneFixo": "71971124587",
-    
     "qtdEntregasRealizadas": "10",
     "valorFrete": "30.50",
     "enderecoRua": "Rua da Esperança",
@@ -41,4 +40,18 @@ ENTREGADOR
     "enderecoUf": "PE",
     "ativo": "true"
     
+}
+
+EMPRESA
+{
+    "site": "www.empresa2.com.br",
+    "cnpj": "12.345.678/0001-99",
+    "inscricaoEstadual": "123.321.456.987",
+    "nomeEmpresarial": "Empresa Y LTDA",
+    "nomeFantasia": "Y Alimentos",
+    "fone": "81985361447",
+    "foneAlternativo": "8199882255",
+    "dataEmpresa": "14/11/2000",
+    "empresaStatus": "true"
+
 }
