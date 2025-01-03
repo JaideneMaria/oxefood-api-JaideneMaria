@@ -1,24 +1,39 @@
+LOGIN
+
+{
+    "username": "jaidene@teste.com",
+    "password": "123@"
+
+}
+
+
 CLIENTE
 
 {
-    "nome": "Jaidene Silva",
+
+    "email": "jaidene@teste.com",
+    "password": "123@",
+    "nome": "Jaidene",
     "dataNascimento": "24/07/1992",
-    "cpf": "12345678942",
-    "foneCelular": "81988088808",
-    "foneFixo": "8134773464"
+    "cpf": "936.407.850-02",
+    "foneCelular": "81 989892565",
+    "foneFixo": "81 34773464"
 } 
 
 
 PRODUTO
 
+
 {
-    "codigo": "1",
-    "titulo": "Redmi Note 13",
-    "descricao": "Smartphone 256GB 8 RAM",
-    "valorUnitario": "1200",
-    "tempoEntregaMinimo": "2",
-    "tempoEntregaMaximo": "15"
+    "idCategoria": 2,
+    "codigo": "5142",
+    "titulo": "teste2",
+    "descricao": "Teste",
+    "valorUnitario": 90,
+    "tempoEntregaMinimo": 5,
+    "tempoEntregaMaximo": 15
 }
+
 
 ENTREGADOR
 

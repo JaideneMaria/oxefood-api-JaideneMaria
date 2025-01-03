@@ -1,10 +1,10 @@
 package br.com.ifpe.oxefood.modelo.produto;
-
 import org.hibernate.annotations.SQLRestriction;
-
+import br.com.ifpe.oxefood.modelo.categoriaProduto.CategoriaProduto;
 import br.com.ifpe.oxefood.util.entity.EntidadeAuditavel;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -13,27 +13,28 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "Produto")
-@SQLRestriction("habilitado = true") //não vai apagar do BD literalmente, apenas lógicamente.
-
+@Table(name = "produto")
+@SQLRestriction("habilitado = true")
 @Builder
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-
-
 public class Produto extends EntidadeAuditavel {
-    @Column
-    private String codigo;
+    
+    @ManyToOne 
+    private CategoriaProduto categoria;
 
-    @Column
+    @Column (nullable = false)
+    private String codigo;
+    
+    @Column (nullable = false, length = 100)
     private String titulo;
 
-    @Column
+    @Column (nullable = false)
     private String descricao;
 
-    @Column
+    @Column (nullable = false)
     private Double valorUnitario;
 
     @Column
@@ -41,5 +42,4 @@ public class Produto extends EntidadeAuditavel {
 
     @Column
     private Integer tempoEntregaMaximo;
-    
 }
